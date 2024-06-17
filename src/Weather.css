@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+main{
+    min-height: 100vh;
+    padding: 25px;
+    background-image: linear-gradient(to bottom , rgba(0,0,0,0.2), rgba(0,0,0,0.75));
+}
+.appwarm{
+    background-image: url('./assets/weather_summer.jpg');
+    background-size: cover; 
+    background-position: cover;
+    height: auto;
+    object-fit: cover;
+    transition: 0.4 ease;
+}
+.appwinter{
+    background-image: url('./assets/weather_winter.jpg');
+    background-size: cover;
+    background-position: bottom;
+    transition: 0.4 ease;
+}
+.appnrml{
+    background-image: url('./assets/weather_nrml.jpg');
+    background-position: center;
+    background-size: cover;
+    transition: 0.4 ease;
+}
+
+
+
+
+.searchbox{
+    width: 100%;
+    margin: 0 0 75px;
+}
+
+.searchbox .searchbar{
+    display: block;
+    padding: 15px;
+    width: 100%;
+    background: none;
+    outline: none;
+    background-color: rgba(255,255,255,0.5);
+    border-radius: 16px;
+    color: #313131;
+    font-size: 20px;
+    transition: 0.4s ease;
+}
+
+.searchbox .searchbar :focus{
+    background-color:rgba(255, 255, 255, 0.75) ;
+}
+
+.locationbox .location{
+    color: #fff;
+    font-size: 32px;
+    font-weight: 550;
+    text-align: center;
+    text-shadow: 3px 3px rgba(50, 50, 50, 0.75 );
+}
+
+
+.locationbox .date{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+    padding: 10px;
+    font-style: italic;
+    text-shadow: 3px 3px rgba(50, 50, 50, 0.75 );
+
+}
+
+
+.wetherbox {
+    text-align: center;
+
+}
+.wetherbox .temp{
+    position: relative;
+    text-align:  center;
+    padding: 10px;
+    font-size: 90px;
+    font-weight: 600;
+    text-shadow: 3px 3px rgba(50, 50, 50, 0.75 );
+    margin: 30px auto;
+    border-radius: 62px;
+    /* background: linear-gradient(225deg, #f0f0f0, #cacaca); */
+    box-shadow:  -33px 33px 75px #6e6e6e, 33px -33px 75px #ffffff;
+    color: #fff;
+    height: 200px;
+    width: 300px;
+
+}
+
+.wetherbox .weather{
+    color: #fff;
+    font-size: 45px;
+    font-weight: 300;
+    text-shadow: 3px 7px rgba(50, 50, 50, 0.75 );
+
+}
+
